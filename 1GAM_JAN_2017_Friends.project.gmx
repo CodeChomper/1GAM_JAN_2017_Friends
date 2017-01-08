@@ -12,12 +12,15 @@
     <sprite>sprites\spr_tank2</sprite>
     <sprite>sprites\spr_gun1</sprite>
     <sprite>sprites\spr_gun2</sprite>
+    <sprite>sprites\spr_bullet</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_gen_land.gml</script>
     <script>scripts\scr_apply_gravity.gml</script>
+    <script>scripts\scr_shoot.gml</script>
+    <script>scripts\script3.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_block</object>
@@ -26,6 +29,8 @@
     <object>objects\obj_tank1</object>
     <object>objects\obj_debug</object>
     <object>objects\obj_tank2</object>
+    <object>objects\obj_bullet</object>
+    <object>objects\obj_game_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

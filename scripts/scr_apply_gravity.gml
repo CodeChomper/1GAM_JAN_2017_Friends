@@ -1,9 +1,11 @@
 /// Apply Gravity
-ySPD += GRAVITY;
+ySPD += argument0;
 
 y+= ySPD;
 
 if(place_meeting(x,y,obj_solid)){
-    y -= ySPD;
+    while(place_meeting(x,y,obj_solid)){
+        y--;
+    }
     ySPD = 0;
 }

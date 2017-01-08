@@ -17,8 +17,8 @@ for (var i=0; i<300; i++){
     }
 }
 
-var p1Pos = round(random_range(0, cols div 2));
-var p2Pos = round(random_range(cols div 2, cols));
+var p1Pos = round(random_range(2, cols div 4));
+var p2Pos = round(random_range(cols - (cols div 4), cols-2));
 instance_create(p1Pos * 16, 0, obj_tank1);
 instance_create(p2Pos * 16, 0, obj_tank2);
 

@@ -50,7 +50,7 @@ ySPD = 0;
           <argument>
             <kind>1</kind>
             <string>/// Fall under gravity
-scr_apply_gravity();
+scr_apply_gravity(3);
 </string>
           </argument>
         </arguments>
