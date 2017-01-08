@@ -12,10 +12,14 @@ for (var i=0; i<300; i++){
     for(var j=0; j< room_height; j++){
         if(place_meeting(col*16,j,obj_block)){
             var b = instance_create(col * 16, j-16, obj_block);
-            //b.phy_fixed_rotation = true;
             break;
         }
     }
-    //instance_create(col * 16, 0, obj_block);
 }
+
+var p1Pos = round(random_range(2, cols div 4));
+var p2Pos = round(random_range(cols - (cols div 4), cols-2));
+instance_create(p1Pos * 16, 0, obj_tank1);
+instance_create(p2Pos * 16, 0, obj_tank2);
+
 
