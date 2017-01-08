@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1262</w>
-    <h>720</h>
+    <w>1246</w>
+    <h>714</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -26,7 +26,7 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>5</page>
+    <page>0</page>
     <xoffset>-25</xoffset>
     <yoffset>-22</yoffset>
   </makerSettings>
@@ -81,6 +81,7 @@
     <instance objName="obj_bed_rock" x="864" y="512" name="inst_8DB29CB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bed_rock" x="896" y="512" name="inst_AA14F790" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bed_rock" x="928" y="512" name="inst_A7AD0CCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_debug" x="0" y="0" name="inst_E4D5580C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

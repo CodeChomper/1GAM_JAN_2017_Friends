@@ -8,16 +8,24 @@
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_bed_rock</sprite>
+    <sprite>sprites\spr_tank1</sprite>
+    <sprite>sprites\spr_tank2</sprite>
+    <sprite>sprites\spr_gun1</sprite>
+    <sprite>sprites\spr_gun2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_gen_land.gml</script>
+    <script>scripts\scr_apply_gravity.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_block</object>
     <object>objects\obj_bed_rock</object>
     <object>objects\obj_solid</object>
+    <object>objects\obj_tank1</object>
+    <object>objects\obj_debug</object>
+    <object>objects\obj_tank2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
