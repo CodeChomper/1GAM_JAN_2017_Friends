@@ -82,6 +82,10 @@ if(obj_game_controller.player == 1){
 } else {
     obj_game_controller.player = 1;
 }
+
+instance_create(x,y,obj_explosion);
+
+//Might move to the explosion end step event
 obj_game_controller.canPlay = true;
 instance_destroy();
 </string>
@@ -89,7 +93,7 @@ instance_destroy();
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -106,7 +110,9 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y &lt; 0){
+            <string>draw_self();
+
+if(y &lt; 0){
     draw_arrow(x,20,x,0,10);
 }
 </string>
