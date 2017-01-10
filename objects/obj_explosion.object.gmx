@@ -34,10 +34,7 @@ with(obj_block){
 
 with(obj_player){
     if(distance_to_object(other) &lt;= 16){
-        show_message("Hit:" + string(life));
         life -= 100 - distance_to_object(other);
-        
-        
     }
 }
 </string>
