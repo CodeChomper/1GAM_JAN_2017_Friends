@@ -35,6 +35,7 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_game_controller</object>
     <object>objects\obj_explosion</object>
+    <object>objects\obj_create_level</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
