@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_player</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -29,6 +29,30 @@
 ySPD = 0;
 gunAngle=180 - 45;
 p=4;
+life = 100;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart();
 </string>
           </argument>
         </arguments>
@@ -71,6 +95,11 @@ if(obj_game_controller.player == 2 &amp;&amp;
         scr_shoot(2);
         obj_game_controller.canPlay = false;
     }
+}
+
+if(life &lt;=0){
+    show_message("Player 1 won!");
+    room_restart();
 }
 </string>
           </argument>
@@ -124,7 +153,7 @@ draw_set_alpha(1);
 draw_sprite_ext(spr_gun2,0,x+19,y-11,1,1,gunAngle,c_white,1);
 
 // Draw tank
-draw_self();
+if(life &gt; 0)draw_self();
 
 
 </string>

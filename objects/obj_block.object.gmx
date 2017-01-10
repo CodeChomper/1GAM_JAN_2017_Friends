@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// init
 ySPD = 0;
+fall = true;
 </string>
           </argument>
         </arguments>
@@ -50,6 +51,7 @@ ySPD = 0;
           <argument>
             <kind>1</kind>
             <string>/// Fall under gravity
+if(fall)
 scr_apply_gravity(3);
 </string>
           </argument>

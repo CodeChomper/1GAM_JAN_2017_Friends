@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_player</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -29,6 +29,7 @@
 ySPD = 0;
 gunAngle = 45;
 p = 4;
+life = 100;
 </string>
           </argument>
         </arguments>
@@ -71,6 +72,11 @@ if(obj_game_controller.player == 1 &amp;&amp;
         scr_shoot(1);
         obj_game_controller.canPlay = false;
     }
+}
+
+if(life &lt;=0){
+    show_message("Player 2 won!");
+    room_restart();
 }
 </string>
           </argument>
@@ -123,7 +129,7 @@ draw_set_alpha(1);
             <string>// Draw gun
 draw_sprite_ext(spr_gun1,0,x+12,y-11,1,1,gunAngle,c_white,1);
 // Draw Tank
-draw_self();
+if(life &gt; 0)draw_self();
 </string>
           </argument>
         </arguments>
