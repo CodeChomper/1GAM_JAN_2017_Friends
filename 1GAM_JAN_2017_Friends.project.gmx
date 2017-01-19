@@ -13,6 +13,7 @@
     <sprite>sprites\spr_gun1</sprite>
     <sprite>sprites\spr_gun2</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,16 +22,22 @@
     <script>scripts\scr_apply_gravity.gml</script>
     <script>scripts\scr_shoot.gml</script>
     <script>scripts\script3.gml</script>
+    <script>scripts\scr_message.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_UI</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_block</object>
     <object>objects\obj_bed_rock</object>
     <object>objects\obj_solid</object>
     <object>objects\obj_tank1</object>
-    <object>objects\obj_debug</object>
     <object>objects\obj_tank2</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_game_controller</object>
+    <object>objects\obj_explosion</object>
+    <object>objects\obj_create_level</object>
+    <object>objects\obj_player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
