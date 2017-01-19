@@ -73,11 +73,6 @@ if(obj_game_controller.player == 1 &amp;&amp;
         obj_game_controller.canPlay = false;
     }
 }
-
-if(life &lt;=0){
-    show_message("Player 2 won!");
-    room_restart();
-}
 </string>
           </argument>
         </arguments>

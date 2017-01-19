@@ -22,6 +22,7 @@
     <script>scripts\scr_apply_gravity.gml</script>
     <script>scripts\scr_shoot.gml</script>
     <script>scripts\script3.gml</script>
+    <script>scripts\scr_message.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_UI</font>

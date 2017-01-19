@@ -29,6 +29,7 @@
 player = 1;
 totalShots = 0;
 canPlay = true;
+restartCounter = -1;
 </string>
           </argument>
         </arguments>
@@ -52,8 +53,28 @@ canPlay = true;
           <argument>
             <kind>1</kind>
             <string>/// Draw who's turn it is
+if(restartCounter == 0) room_restart();
+
 draw_set_color(c_white);
-draw_text(10,20,"Player " + string(player) +"'s turn!");
+draw_text(10,20,"Player " + string(player) + " Shoot");
+
+if(obj_tank1.life &lt;=0){
+    scr_message("Player 2 won",400,200,fnt_UI,c_white,c_black,10);
+    if(restartCounter == -1){
+        restartCounter = 30;
+    }
+    restartCounter--;
+
+}
+
+if(obj_tank2.life &lt;=0){
+    scr_message("Player 1 won",400,200,fnt_UI,c_white,c_black,10);
+    if(restartCounter == -1){
+        restartCounter = 30;
+    }
+    restartCounter--;
+
+}
 </string>
           </argument>
         </arguments>
